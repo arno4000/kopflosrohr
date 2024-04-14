@@ -1,0 +1,12 @@
+services:
+    docker-chromium:
+        environment:
+            - PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native
+        volumes:
+            - ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native
+            - ~/.config/pulse/cookie:/root/.config/pulse/cookie
+        devices:
+            - /dev/snd:/dev/snd
+        stdin_open: true
+        tty: true
+        image: kekl
