@@ -9,4 +9,4 @@ services:
             - /dev/snd:/dev/snd
         stdin_open: true
         tty: true
-        image: kopflosrohr
+        image: phonkd/kopflosrohr:0.1 # or phonkd/kopflosrohr:0.1-arm64 if you want to use tha arm64 image
