@@ -1,7 +1,7 @@
 # kopflosrohr
 Containerized headless YouTube TV for receiving YouTube Audio Streams.
 
-For now, build the container with `docker build . -t <name-of-the-image>`. I will push an image soon.
+Build the container with `docker build . -t <name-of-the-image>`.
 
 You have to have `pulseaudio` installed on your server and be able to play audio. This can be testet using the command `aplay /usr/share/sounds/alsa/Front_Right.wav`. `alsa-utils` is required for the aplay command.
 
